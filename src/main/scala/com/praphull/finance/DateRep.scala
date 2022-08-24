@@ -1,7 +1,7 @@
 package com.praphull.finance
 
+import java.time.LocalDate
 import java.util.Date
-
 import org.joda.time.{DateTime, Days}
 
 /** Simplified Date representation */
@@ -46,6 +46,8 @@ object DateRep {
   def apply(date: Long): DateRep = apply(new DateTime(date))
 
   def apply(date: Date): DateRep = apply(date.getTime)
+
+  def apply(date: LocalDate): DateRep = apply(date.getYear, date.getMonthValue, date.getDayOfMonth)
 
   def apply(string: String): DateRep = apply(DateTime.parse(string))
 
