@@ -1,7 +1,7 @@
 organization := "com.praphull"
 name := "scala-finance"
 description := "Financial function implementations in Scala"
-version := "0.0.1"
+version := "0.0.2"
 
 scalaVersion := Versions.scala
 crossScalaVersions := Versions.crossCompileVersions
@@ -15,7 +15,6 @@ scalacOptions ++= Seq(
   "-Xfatal-warnings",
   "-deprecation",
   "-unchecked",
-  "-feature",
-  "-Xlint"
+  "-feature"
 )
-scalacOptions in(Compile, doc) += "-no-link-warnings"
+Compile / doc / scalacOptions += "-no-link-warnings"
