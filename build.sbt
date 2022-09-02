@@ -1,14 +1,14 @@
 organization := "com.praphull"
-name := "scala-finance"
-description := "Financial function implementations in Scala"
-version := "0.0.2"
+name         := "scala-finance"
+description  := "Financial function implementations in Scala"
+version      := "0.0.2"
 
-scalaVersion := Versions.scala
+scalaVersion       := Versions.scala
 crossScalaVersions := Versions.crossCompileVersions
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % Versions.scalaTest % Test,
-  "joda-time" % "joda-time" % Versions.jodaTime % Compile
+  "joda-time"      % "joda-time" % Versions.jodaTime  % Compile
 )
 
 scalacOptions ++= Seq(
