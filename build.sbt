@@ -1,7 +1,7 @@
 organization := "com.praphull"
 name         := "scala-finance"
 description  := "Financial function implementations in Scala"
-version      := "0.0.2"
+version      := "0.0.3"
 
 scalaVersion       := Versions.scala
 crossScalaVersions := Versions.crossCompileVersions
